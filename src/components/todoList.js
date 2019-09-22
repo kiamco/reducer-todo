@@ -5,11 +5,9 @@ import TodoCard from './todoCard';
 const TodoList = (props) => {
     const [todos, setTodos] = useState(TodoData);
 
-    return(
+    return (
         <div className='list-container'>
-            {
-                todos.map(el => <TodoCard item={el.item} isCompleted={el.completed} />)
-            }
+            <TodoCard items={TodoData} />
         </div>
     )
 }

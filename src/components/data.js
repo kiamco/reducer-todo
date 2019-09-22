@@ -21,17 +21,17 @@
      {
          item: 'Buy snacks',
          completed: false,
-         id: 3892987589
+         id: 5
      },
      {
          item: 'Get that money',
          completed: false,
-         id: 5
+         id: 6
      },
      {
          item: 'Finish painting',
          completed: false,
-         id: 6
+         id: 7
      }
  ]
 
