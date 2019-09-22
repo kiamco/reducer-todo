@@ -16,7 +16,6 @@ const TodoCart = (props) => {
             })
         }
             <button onClick={e => {
-                console.log(state);
                 dispatch({ type: "REMOVE" })}
                 } > Remove Completed Items</button>
         </div>
