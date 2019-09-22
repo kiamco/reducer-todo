@@ -8,6 +8,16 @@ const listReducer = (state, action) => {
                 },
                 ...state.slice(action.id)
             ];
+        case "REMOVE":
+            if (!state.completed) {
+                let uncompleted = state.filter(item => item.completed === false);
+                return uncompleted;
+            } else {
+                return state;
+            }
+            // return
+            // // state.completed ? state.filter(item => item.completed === true) : state
+
         default:
             return state;
     }
